@@ -25,9 +25,9 @@ module.exports = merge(config, {
     },
     // devMiddleware: {
     //   index: false,
-    //   writeToDisk: true, // if you want dev build in your local directory
+    //   writeToDisk: true, // Enable this option if you want the development build to be written to your local directory
     // },
-    /** If you want to proxy to a different server **/
+    /** Use this if you want to proxy requests to a different server **/
     proxy: [
       {
         context: ["/ss"],

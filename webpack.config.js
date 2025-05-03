@@ -5,8 +5,8 @@ const config = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
-    path: path.resolve(__dirname, "dist"), // ✅ Important! Output folder
-    clean: true, // ✅ Webpack 5 clean
+    path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -14,7 +14,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, // ✅ Correct regex
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
